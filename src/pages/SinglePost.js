@@ -13,7 +13,7 @@ import {
 import moment from "moment";
 
 import { AuthContext } from "../context/auth";
-import { LikeButton } from "../components/LikeButton";
+import { UpButton } from "../components/UpButton";
 import DeleteButton from "../components/DeleteButton";
 import MyPopup from "../utils/MyPopup";
 
@@ -67,9 +67,10 @@ const SinglePost = (props) => {
 				<Grid.Row>
 					<Grid.Column width={2}>
 						<Image
-							src='https://react.semantic-ui.com/images/avatar/large/molly.png'
-							size='small'
+							src='https://styles.redditmedia.com/t5_2r5i1/styles/communityIcon_x4lqmqzu1hi81.jpg'
+							size='medium'
 							float='right'
+							circular
 						/>
 					</Grid.Column>
 					<Grid.Column width={10}>
@@ -82,13 +83,13 @@ const SinglePost = (props) => {
 							</Card.Content>
 							<hr />
 							<Card.Content extra>
-								<LikeButton user={user} post={{ id, likeCount, likes }} />
+								<UpButton user={user} post={{ id, likeCount, likes }} />
 								<MyPopup content='Comment on post'>
 									<Button as='div' labelPosition='right'>
-										<Button basic color='blue'>
+										<Button basic color='orange'>
 											<Icon name='comments' />
 										</Button>
-										<Label basic color='blue' pointing='left'>
+										<Label basic color='orange' pointing='left'>
 											{commentCount}
 										</Label>
 									</Button>

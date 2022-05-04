@@ -1,5 +1,5 @@
 {
-	"name": "commentme-web",
+	"name": "Mingyi-SHI-Yiyu-Zhang-Proj3-Web-app",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -7,6 +7,7 @@
 		"@testing-library/jest-dom": "^5.16.2",
 		"@testing-library/react": "^12.1.4",
 		"@testing-library/user-event": "^13.5.0",
+		"all": "^0.0.0",
 		"apollo-cache-inmemory": "^1.6.2",
 		"apollo-client": "^2.6.2",
 		"apollo-link-context": "^1.0.18",
@@ -51,5 +52,5 @@
 	"devDependencies": {
 		"react-error-overlay": "^6.0.9"
 	},
-	"proxy": "https://comment-me.herokuapp.com/"
+	"proxy": "https://moviepostreviewapp.herokuapp.com/"
 }

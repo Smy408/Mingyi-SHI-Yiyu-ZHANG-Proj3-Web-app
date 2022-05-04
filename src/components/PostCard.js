@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import moment from "moment";
 
 import { AuthContext } from "../context/auth";
-import LikeButton from "./LikeButton";
+import LikeButton from "./UpButton";
 import DeleteButton from "./DeleteButton";
 import MyPopup from "../utils/MyPopup";
 
@@ -35,7 +35,7 @@ const PostCard = ({
 						<Button color='orange' basic>
 							<Icon name='comments' />
 						</Button>
-						<Label basic color='navy' pointing='left'>
+						<Label basic color='orange' pointing='left'>
 							{commentCount}
 						</Label>
 					</Button>

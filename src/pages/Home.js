@@ -21,7 +21,7 @@ function Home() {
 		));
 	}
 	return (
-		<div className="page">
+		
 
 		
 		<Grid columns={1}>
@@ -38,7 +38,7 @@ function Home() {
 				<Transition.Group duration={400}>{posts}</Transition.Group>
 			</Grid.Row>
 		</Grid>
-		</div>
+		
 	);
 }
 
