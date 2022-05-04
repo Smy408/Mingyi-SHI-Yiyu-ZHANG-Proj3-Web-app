@@ -21,11 +21,11 @@ export const LikeButton = ({ user, post: { id, likeCount, likes } }) => {
 
 	const likeButton = user ? (
 		liked ? (
-			<Button color='teal'>
+			<Button color='red'>
 				<Icon name='heart' />
 			</Button>
 		) : (
-			<Button color='teal' basic>
+			<Button color='green' basic>
 				<Icon name='heart' />
 			</Button>
 		)

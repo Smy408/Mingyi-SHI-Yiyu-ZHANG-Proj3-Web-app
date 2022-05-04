@@ -6,6 +6,7 @@ import { AuthContext } from "../context/auth";
 import PostCard from "../components/PostCard";
 import PostForm from "../components/PostForm";
 import { FETCH_POSTS_QUERY } from "../utils/graphql";
+import "../App.css"; 
 
 function Home() {
 	const { user } = useContext(AuthContext);
@@ -20,9 +21,13 @@ function Home() {
 		));
 	}
 	return (
+		<div className="page">
+
+		
 		<Grid columns={1}>
 			<Grid.Row className='page-title'>
-				<h1>Recent Movie Posts</h1>
+				<h1 style={{color:"Orange", fontSize: "100px"}}>MovieMaster</h1>
+				<h1 style={{color:"navy"}}>Recent Movie Posts</h1>
 			</Grid.Row>
 			<Grid.Row>
 				{user && (
@@ -33,6 +38,7 @@ function Home() {
 				<Transition.Group duration={400}>{posts}</Transition.Group>
 			</Grid.Row>
 		</Grid>
+		</div>
 	);
 }
 

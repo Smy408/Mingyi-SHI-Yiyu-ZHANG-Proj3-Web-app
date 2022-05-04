@@ -19,7 +19,7 @@ function MenuBar() {
 	};
 
 	const menuBar = user ? (
-		<Menu pointing secondary size='massive' color='teal'>
+		<Menu pointing secondary size='massive' color='navy'>
 			<Menu.Item name={user.username} active as={Link} to='/' />
 			<Menu.Menu position='right'>
 				<Menu.Item
@@ -30,7 +30,7 @@ function MenuBar() {
 			</Menu.Menu>
 		</Menu>
 	) : (
-		<Menu pointing secondary size='massive' color='teal'>
+		<Menu color='teal' pointing secondary size='massive'  >
 			<Menu.Item
 				name='home'
 				active={activeItem === "home"}

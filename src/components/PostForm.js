@@ -46,6 +46,7 @@ const PostForm = () => {
 						onChange={onChange}
 						value={values.title}
 						error={error ? true : false}
+						color='grey'
 					/>
 					<Form.Input
 						placeholder='Director...'
@@ -63,7 +64,7 @@ const PostForm = () => {
 					/>
 					<Button
 						type='submit'
-						color='teal'
+						color='orange'
 						disabled={values.title.trim() === ""}
 					>
 						Submit
