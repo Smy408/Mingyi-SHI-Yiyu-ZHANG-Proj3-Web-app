@@ -13,7 +13,6 @@ import {
 import moment from "moment";
 
 import { AuthContext } from "../context/auth";
-import { UpButton } from "../components/UpButton";
 import DeleteButton from "../components/DeleteButton";
 import MyPopup from "../utils/MyPopup";
 
@@ -57,8 +56,6 @@ const SinglePost = (props) => {
 			createdAt,
 			username,
 			comments,
-			likes,
-			likeCount,
 			commentCount,
 		} = getPost;
 
@@ -83,7 +80,6 @@ const SinglePost = (props) => {
 							</Card.Content>
 							<hr />
 							<Card.Content extra>
-								<UpButton user={user} post={{ id, likeCount, likes }} />
 								<MyPopup content='Comment on post'>
 									<Button as='div' labelPosition='right'>
 										<Button basic color='orange'>
@@ -173,10 +169,6 @@ const FETCH_POST_QUERY = gql`
 			year
 			createdAt
 			username
-			likeCount
-			likes {
-				username
-			}
 			commentCount
 			comments {
 				id

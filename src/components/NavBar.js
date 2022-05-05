@@ -19,7 +19,7 @@ function NavBar() {
 	};
 
 	const navbar = user ? (
-		<Menu size='medium' color='teal' inverted widths={6}>
+		<Menu size='large' color='teal' inverted widths={6}>
 			<Menu.Item name={user.username} active as={Link} to='/' />
 			<Menu.Menu position='right' color='orange'>
 				<Menu.Item

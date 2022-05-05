@@ -91,12 +91,6 @@ const CREATE_POST_MUTATION = gql`
 			year
 			createdAt
 			username
-			likes {
-				id
-				username
-				createdAt
-			}
-			likeCount
 			comments {
 				id
 				body

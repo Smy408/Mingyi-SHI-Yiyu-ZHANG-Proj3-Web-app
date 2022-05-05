@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 import moment from "moment";
 
 import { AuthContext } from "../context/auth";
-import LikeButton from "./UpButton";
 import DeleteButton from "./DeleteButton";
 import MyPopup from "../utils/MyPopup";
 
 const PostCard = ({
-	post: { title, director, year, createdAt, id, username, likeCount, commentCount, likes },
+	post: { title, director, year, createdAt, id, username, commentCount },
 }) => {
 	const { user } = useContext(AuthContext);
 
@@ -29,7 +28,7 @@ const PostCard = ({
 				<Card.Description>Director: {director} </Card.Description>
 			</Card.Content>
 			<Card.Content extra>
-				<LikeButton user={user} post={{ id, likes, likeCount }} />
+		
 				<MyPopup content='Comment on post'>
 					<Button labelPosition='right' as={Link} to={`/posts/${id}`}>
 						<Button color='orange' basic>
